@@ -1,0 +1,37 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+    <title>Registration</title>
+{% endblock %}
+
+
+{% block body_block %}
+    <center>
+        <h1>registration Form</h1>
+        <table class="nvn">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <tr>
+                    <td>{{usfo}}</td>
+                </tr>
+                <tr>
+                    <td>{{pfo}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="registration">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </center>
+    <style>
+        body
+        {
+            background-image: url(https://e1.pxfuel.com/desktop-wallpaper/171/993/desktop-wallpaper-color-splash-1-mix-color-thumbnail.jpg);
+            color:ghostwhite;
+           
+        }
+    </style>
+    {% endblock %}
+    
